@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-// styles.scss
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-// Aplica estilos personalizados utilizando @apply
 .body {
   @apply font-sans flex flex-col items-center justify-center;
 }
