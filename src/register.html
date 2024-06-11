@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./assets/styles/main.scss">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <title>Concurso de cocina</title>
+</head>
+<body>
+  <include src="./views/header.html"></include>
+  <div class="body">
+    <main class="main">
+      <div class="flex justify-center items-center text-textColor">
+        <h1 class="text-4xl mb-4">Inscripción</h1>
+      </div>
+      <img id="dish" src="./assets/images/register.jpg" alt="Plato de comida">
+      <form netlify>
+        <include src="./views/input-nombre.html"></include>
+        <include src="./views/input-apellidos.html"></include>
+        <include src="./views/input-edad.html"></include>
+        <div class="mb-4">
+          <label for="selectExperiencia" class="block font-medium text-textColor text-center">Experiencia Culinaria</label>
+          <select class="form-control" id="selectExperiencia" required>
+            <option value="" selected disabled>Seleccionar...</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+          </select>
+        </div>
+        <div class="flex justify-center items-center">
+          <button type="submit" class="btn btn-success">Enviar</button>
+        </div>
+      </form>
+    </main>
+  </div>
+  <include src="./views/footer.html"></include>
+  <script src="./assets/scripts/main.js"></script>
+</body>
+</html>

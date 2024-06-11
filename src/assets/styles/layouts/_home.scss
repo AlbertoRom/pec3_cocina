@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// styles.scss
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+// Aplica estilos personalizados utilizando @apply
+.body {
+  @apply font-sans flex flex-col items-center justify-center;
+}
+
+.main {
+  @apply p-4;
+}
+
+.form-control {
+  @apply block w-full p-2 border border-gray-300 rounded-md;
+}
+
+.btn-success {
+  @apply bg-button text-white py-2 px-4 rounded-md hover:bg-buttonHover;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#dish {
+  @apply w-[35vh] animate-spin;
+  clip-path: circle(40% at 50% 50%);
+}
+
+@media (max-width: 1025px) {
+  .header, .footer {
+    flex-direction: column;
+  }
+  .header h2, .footer h2 {
+    font-size: 4vh;
+  }
+}
